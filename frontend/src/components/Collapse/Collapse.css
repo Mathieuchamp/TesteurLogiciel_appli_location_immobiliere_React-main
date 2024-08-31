@@ -1,0 +1,46 @@
+.collapse {
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    box-sizing: border-box;
+}
+
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.collapse-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.collapse-arrow {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.collapse-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    color: #333;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.about{
+    gap:28px;
+    margin-top: 28px;
+}

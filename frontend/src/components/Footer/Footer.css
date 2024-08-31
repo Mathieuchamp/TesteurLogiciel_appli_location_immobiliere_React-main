@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 209px;
+    background: black;
+    color: white;
+    font-size: 24px;
+}
+
+.img_footer { 
+    margin: 0 auto; 
+}
+
+.img_footer img { 
+    height: 39px; 
+    width: 122px; 
+}
+
+.text_footer {
+    height: 46px;
+    text-align: center;
+}
+
+.text_footer p {
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+

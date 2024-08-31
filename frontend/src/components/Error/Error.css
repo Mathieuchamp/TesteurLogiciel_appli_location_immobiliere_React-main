@@ -1,0 +1,36 @@
+.erreurContainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 139px;
+}
+
+.erreurContainer span {
+    font-size: 288px;
+    margin-bottom: 139px;
+}
+
+.erreurContainer h4 {
+    font-size: 36px;
+    margin: 30px 0;
+    margin-bottom: 139px;
+    margin-top: 139px;
+}
+
+.erreurContainer a {
+    color: #FF6060;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+    .erreurContainer span { font-size: 180px; }
+}
+
+@media (max-width: 400px) {
+    .erreurContainer {      margin: auto 0; }
+    .erreurContainer span { font-size: 96px; }
+    .erreurContainer h4 {   font-size: 18px; }
+    .erreurContainer a {    font-size: 14px; }
+}
