@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import './Logementscards.css';
 
-// composant qui permet de récupérer la liste des logements et de les afficher sous forme de card
-
-
-
 function LogementsCards() {
 
     const [datas, setDatas] = useState([])

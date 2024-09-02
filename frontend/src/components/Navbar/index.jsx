@@ -11,10 +11,16 @@ function Navbar() {
                 </NavLink>
             </div>
             <div className='lien'>
-                <NavLink className="nav-link" to="/home" activeClassName="active">
+                <NavLink 
+                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                    to="/home"
+                >
                     Accueil
                 </NavLink>
-                <NavLink className="nav-link" to="/about" activeClassName="active">
+                <NavLink 
+                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                    to="/about"
+                >
                     À Propos
                 </NavLink>
             </div>
