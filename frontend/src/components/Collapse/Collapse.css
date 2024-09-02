@@ -29,7 +29,6 @@
 .collapse-arrow {
     width: 18px;
     height: 18px;
-    transition: transform 0.3s ease;
 }
 
 .collapse-content {
@@ -44,4 +43,9 @@
 .about{
     gap:28px;
     margin-top: 28px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
