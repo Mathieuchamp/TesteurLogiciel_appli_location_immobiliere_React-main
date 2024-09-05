@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel/index';
 import Footer from '../components/Footer/index';
 import Children from '../components/Children/Children';
 import Collapse from '../components/Collapse/Collapse';
+import Error from '../components/Error/ErrorComponents';
 import '../styles/Location.css';
 
 function Location() {
@@ -19,13 +20,15 @@ function Location() {
     fetch('http://localhost:8080/api/properties')
       .then((response) => response.json())
       .then((data) => {setId(data);});
-  }, [idLogement]);
+  }, []);
+
+  if (!record) return(<Error />)
 
   return (
     <div className='logement'>
       <Children>
         <Navbar />
-        {record && record.pictures && (
+        {record.pictures && (
           <Carousel pictures={record.pictures} className='carousel-logement' />
         )}
         {record && (<>
@@ -50,7 +53,7 @@ function Location() {
                 </div>
                 <div className='stars'>
                   {arrayStars.map((element) => {
-                    const nbreEtoiles = parseInt(record.rating, 6);
+                    const nbreEtoiles = parseInt(record.rating, 10);
                     return (
                       <span
                         key={'star-' + element}
