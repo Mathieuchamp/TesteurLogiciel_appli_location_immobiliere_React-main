@@ -3,7 +3,7 @@ import ChevronLeft from '../../assets/images/arrow_back_ios-24px 1.png';
 import ChevronRight from '../../assets/images/arrow_forward_ios-24px 1.png';
 import "../Carousel/Carousel.css";
 
-function Carousel({ pictures }) { // Ajout de la prop pictures
+function Carousel({ pictures }) {
 
     const [index, setIndex] = useState(0);
     const totalPictures = pictures.length - 1;

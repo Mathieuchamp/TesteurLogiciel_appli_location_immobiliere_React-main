@@ -18,9 +18,7 @@ function Location() {
   useEffect(() => {
     fetch('http://localhost:8080/api/properties')
       .then((response) => response.json())
-      .then((data) => {
-        setId(data);
-      });
+      .then((data) => {setId(data);});
   }, [idLogement]);
 
   return (
@@ -52,7 +50,7 @@ function Location() {
                 </div>
                 <div className='stars'>
                   {arrayStars.map((element) => {
-                    const nbreEtoiles = parseInt(record.rating, 10);
+                    const nbreEtoiles = parseInt(record.rating, 6);
                     return (
                       <span
                         key={'star-' + element}
@@ -67,9 +65,7 @@ function Location() {
             </div>
             <div className='collapseLogement'>
               <Collapse title='Description' content={record.description} />
-              <Collapse
-                title='Équipements'
-                content={
+              <Collapse title='Équipements'content={
                   <ul>
                     {record.equipments.map((element, index) => (
                       <li

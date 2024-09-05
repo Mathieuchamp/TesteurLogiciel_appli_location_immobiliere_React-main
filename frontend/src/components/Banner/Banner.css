@@ -38,6 +38,8 @@
          1px  1px 0 #000;
     height: 68px;
     overflow: hidden;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 @media (max-width: 1024px) {
