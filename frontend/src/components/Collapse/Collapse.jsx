@@ -15,10 +15,12 @@ function Collapse({ title, content }) {
                 <img 
                     src={isOpen ? ArrowUp : ArrowDown} 
                     alt={isOpen ? "Fermer" : "Ouvrir"} 
-                    className="collapse-arrow"
+                    className={`collapse-arrow ${isOpen ? 'rotate-arrow' : ''}`}
                 />
             </div>
-            {isOpen && <div className="collapse-content">{content}</div>}
+            <div className={`collapse-content ${isOpen ? 'open' : 'closed'}`}>
+                {content}
+            </div>
         </div>
     );
 }

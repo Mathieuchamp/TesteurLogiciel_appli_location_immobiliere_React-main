@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #ff6b6b;
+    background-color: #ff6b6b ;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -37,7 +37,30 @@
     border-top: 1px solid #ddd;
     color: #333;
     box-sizing: border-box;
-    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.collapse-content.open {
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 3s ease;
+}
+
+.collapse-content.closed {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.collapse-arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg); 
+    transition: transform 0.3s ease;
 }
 
 .about{
