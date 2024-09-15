@@ -15,7 +15,7 @@
     border-radius: 20px;
     display: flex;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(70%);
 }
 
 .texte h1 {
