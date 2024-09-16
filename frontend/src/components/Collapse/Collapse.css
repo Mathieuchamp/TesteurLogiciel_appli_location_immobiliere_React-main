@@ -22,7 +22,11 @@
 
 .collapse-header h3 {
     margin: 0;
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -33,6 +37,11 @@
 
 .collapse-content {
     padding:0 10px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
     color: #333;
