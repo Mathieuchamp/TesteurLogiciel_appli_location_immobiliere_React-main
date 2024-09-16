@@ -44,13 +44,24 @@
 }
 
 @media (max-width: 768px) {
+    
+    .navbar .logo {
+        max-width: 145px;
+        height: auto;
+    }
+}
+
+@media (max-width: 510px) {
+    
+    .navbar .logo {
+        max-width: 145px;
+        height: auto;
+    }
+
     .navbar .lien a {
         text-transform: uppercase;
         font-size: 12px;
         padding-left: 20px;
-    }
-    .navbar .logo {
-        width: 145px;
     }
 }
 
@@ -62,8 +73,5 @@
         margin: 0 auto;
     }
 
-    .navbar .logo {
-        width: 145px;
-    }
 
 }
